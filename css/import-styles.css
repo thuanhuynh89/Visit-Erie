@@ -1,0 +1,336 @@
+/* Type Selectors */
+@font-face {
+    font-family: 'Abolition Regular';
+      src: url('../fonts/abolition-regular-webfont.eot');
+      src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/abolition-regular-webfont.woff') format('woff'),
+       url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+
+
+/* Type Selectors */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: #878787;
+    margin: 0;
+    font-size: 1em;  */
+    font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    max-width: 100%;  
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+h1, h2 {
+    font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
+}
+
+header {
+    /*padding-top: 120px;*/
+    padding-bottom: 0px;
+    margin: 0 0 50px;
+}
+
+header span {
+    color: white;
+    font-size: 26px; 
+}
+
+h1 {
+    font-size: 5.625rem;    /*  90px/16px */
+    color: rgba(255, 255, 255, 1.0);
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.3;
+    text-shadow: 0 1px 1px rgba(0,0,0,.8);
+    margin: 12px 0 0;
+}
+
+h2 {
+    font-size: 53px;
+    font-weight: normal;
+    line-height: 1.1;
+    margin-bottom: .5em;
+}
+
+h3 {
+    font-size: 20px;
+    color: #48525c;
+    line-height: 1.2;
+    margin-bottom: 1.7em;
+}
+
+/*li {
+    display: inline-block;
+    padding: 0 12px;
+    border-right: solid 1px;
+    margin: 80px 0;
+}*/
+
+img {
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+ul, ol {
+    /* color: black; */
+    margin: 30px 0;
+}
+
+
+li {
+    margin-bottom: 10px;
+}
+
+/* ID Selectors */
+
+.callout1, .callout2 {
+    font-size: 1.25em;
+    border-bottom: 3px solid;
+    padding: 0 9px 3px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+#title {
+    color: white;
+    font-size: 1.625rem; /* 26px/16px */
+    letter-spacing: .065em;
+    font-weight: 200;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+}
+
+/* Class Selectors */
+
+.main-header {
+    /* background-color: #4c9ed9;  This makes our header color blue  */
+    /*width: 960px;*/
+    padding-top: 170px;
+    height: 850px;
+    /* background-image: url('../img/lakeerie.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+
+    background: linear-gradient(#4c9ed9, transparent 60%),
+                linear-gradient(0deg,#fff, transparent),
+               #4c9ed9 url('../img/lakeerie.jpg') no-repeat center / cover;
+
+    /* background-image: radial-gradient(circle at top right, #ffa949 0%, firebrick 60%, dodgerblue 100%); */
+}
+
+.primary-content,
+.main-header {
+    text-align: center;
+}
+
+.t-border {
+    border-top: 2px solid lightgrey;
+}
+
+
+.peninsula {
+    /* padding-top: 40px; */
+    width: 100%;
+    height: 33%;
+}
+
+.trail {
+    /* padding-top: 80px; */
+    width: 100%;
+    height: 33%;
+}
+
+.main-footer {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 44px;
+    width: 75%; 
+    margin: auto;
+}
+
+.border {
+    border-bottom: 10px solid #4c9ed9;
+}
+
+
+
+/* Pseudo-classes */
+a:link {
+    color: #4c9ed9;
+    text-decoration: none;
+}
+
+a:visited {
+    color: lightblue;
+}
+
+a:hover {
+    color: 	rgba(76, 158, 217, .4); 
+}
+
+a:active {
+    color: lightcoral;
+}
+
+/*:focus {
+    color: white;
+    background-color: orange;
+}*/
+
+
+/* Layout Styles ---------------------- */
+
+.primary-content {
+    width: 75%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 80px;
+    margin: auto;
+    max-width: 900px;
+}
+.secondary-content {
+    width: 75%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin: auto;
+    max-width: 900px;
+    
+}
+
+.wildlife {
+    color: white;
+    padding: 18% 24%;
+    border-top: 10px solid #4c9ed9;
+    margin: 105px 0 60px;
+
+    background: #434a52;
+    background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),url('../img/owl.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+
+    box-shadow: inset 0 0 50px 10px rgba(0,0,0, 1);
+    /* background: #434a52 url('../img/owl.jpg') no-repeat center / cover;
+    filter: grayscale(70%); */
+
+    /* border-top-left-radius: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 10px; */
+    border-radius: 10px;
+}
+
+.arrow {
+    width: 50px;
+    margin-top: 150px;
+}
+
+/* Floated Columns ---------------------- */
+
+.resorts,
+.tips {
+    width: 46.5%
+}
+
+.tips {
+    float: left;
+}
+
+.resorts {
+    float: right;
+}
+
+/* Floated Columns ---------------------- */
+
+.group:after {
+    content: "";
+    display: table; 
+    clear: both;
+}
+
+/* Media Queries ---------------------- */
+
+/* @media (max-width: 960px) {
+    body {
+        background: royalblue;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background: darkred;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 700px) {
+    body {
+        background: seagreen;
+    }
+        p {
+        color: white;
+    }
+} */
+
+@media (max-width: 1024px) {
+    .primary-content,
+    .secondary-content {
+        width: 90%;
+    }
+    .wildlife {
+        padding: 10% 12%;
+        margin: 50 px 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .primary-content,
+    .secondary-content {
+        width: 100%;
+        padding: 20px;
+        border-top: none;
+    }
+
+    .main-header {
+    max-height: 380px;
+    padding: 50px 25px 0;
+    }
+
+    #title {
+        font-size: 1.3rem;
+        border: none;
+    }
+    h1 {
+        font-size: 5rem;
+        line-height: 1.1;
+    }
+    .arrow {
+        display: none;
+    }
+    .intro {
+        font-size: 1rem;
+    }
+    .resorts, .tips {
+        float: none;
+        width: 100%;
+        padding-top: 60px;
+    }
+    .main-footer {
+        padding: 20px 0;
+    }
+    .callout2 {
+        margin-top: -25px;
+    }
+}
+
